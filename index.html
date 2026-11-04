@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUREL — Adornment, Artfully</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">Complimentary delivery on orders above ₹2,999</div>
+
+  <header class="header">
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <a class="logo" href="#">AUREL<span>.</span></a>
+    <nav class="nav">
+      <a href="#collections">Collections</a>
+      <a href="#shop">Shop all</a>
+      <a href="#about">Our story</a>
+    </nav>
+    <a class="bag" href="#shop">Bag <span class="bag-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Adornment, artfully</p>
+        <h1>Little pieces.<br /><em>Lasting presence.</em></h1>
+        <p>Distinctive jewellery and finishing touches, designed to feel like they were always yours.</p>
+        <a class="button" href="#shop">Discover the edit <span>↗</span></a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85" alt="Sculptural gold jewellery" />
+        <span class="image-caption">THE FORM EDIT — 01</span>
+      </div>
+    </section>
+
+    <section class="collections" id="collections">
+      <div class="section-title">
+        <p class="eyebrow">Curated by mood</p>
+        <h2>Find your <em>signature.</em></h2>
+      </div>
+
+      <div class="collection-list">
+        <a href="#shop" class="collection-card">
+          <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=650&q=85" alt="Sculptural earrings" />
+          <span>01 / EARRINGS</span><h3>The ear edit ↗</h3>
+        </a>
+        <a href="#shop" class="collection-card">
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=650&q=85" alt="Gold necklace" />
+          <span>02 / NECKLACES</span><h3>Close to heart ↗</h3>
+        </a>
+        <a href="#shop" class="collection-card">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=650&q=85" alt="Stacked rings" />
+          <span>03 / RINGS</span><h3>Stack your story ↗</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="shop-heading">
+        <div>
+          <p class="eyebrow">Made for your everyday, and everything after</p>
+          <h2>Objects of <em>affection.</em></h2>
+        </div>
+        <span class="piece-count">SIX PIECES — ONE GOOD MOOD</span>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">All pieces</button>
+        <button class="filter" data-filter="earrings">Earrings</button>
+        <button class="filter" data-filter="necklaces">Necklaces</button>
+        <button class="filter" data-filter="rings">Rings</button>
+        <button class="filter" data-filter="details">Little details</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product" data-category="earrings">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=85" alt="Gold statement earrings" />
+            <span class="tag">BESTSELLER</span>
+          </div>
+          <div class="product-info"><div><h3>Sol sculpted hoops</h3><p>18k gold vermeil</p></div><span>₹2,850</span></div>
+          <button class="add-button">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product" data-category="necklaces">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=85" alt="Delicate layered necklace" />
+            <span class="tag">NEW</span>
+          </div>
+          <div class="product-info"><div><h3>Orbit layering chain</h3><p>Recycled sterling silver</p></div><span>₹3,200</span></div>
+          <button class="add-button">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product" data-category="rings">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=85" alt="Gemstone gold ring" />
+            <span class="tag">ONE OF A KIND</span>
+          </div>
+          <div class="product-info"><div><h3>Aura signet ring</h3><p>Natural stone detail</p></div><span>₹2,450</span></div>
+          <button class="add-button">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product" data-category="details">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=85" alt="Minimal gold cuff bracelet" />
+            <span class="tag">THE FORM EDIT</span>
+          </div>
+          <div class="product-info"><div><h3>Mira open cuff</h3><p>Hand-finished brass</p></div><span>₹1,950</span></div>
+          <button class="add-button">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product" data-category="details">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=600&q=85" alt="Delicate gold anklet jewellery" />
+            <span class="tag">SUMMER FAVOURITE</span>
+          </div>
+          <div class="product-info"><div><h3>Sunday fine anklet</h3><p>Gold-plated sterling silver</p></div><span>₹1,650</span></div>
+          <button class="add-button">Add to bag <span>+</span></button>
+        </article>
+
+        <article class="product" data-category="earrings">
+          <div class="product-photo">
+            <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=600&q=85" alt="Pearl drop earrings" />
+            <span class="tag">LIMITED EDITION</span>
+          </div>
+          <div class="product-info"><div><h3>Moonlight pearl drops</h3><p>Freshwater pearl detail</p></div><span>₹2,250</span></div>
+          <button class="add-button">Add to bag <span>+</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="note" id="about">
+      <p class="eyebrow">A little note from AUREL</p>
+      <h2>Wear what feels<br /><em>like you.</em></h2>
+      <p>Small-batch pieces, thoughtfully chosen. Made to mix, match, and make your own.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#">AUREL<span>.</span></a>
+    <p>Thoughtful adornment. Made with intention.</p>
+    <small>© 2025 AUREL STUDIO</small>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
